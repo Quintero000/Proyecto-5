@@ -1,0 +1,135 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 25px;
+    font-family: Arial, sans-serif;
+    color: #222;
+    background-color: #fff;
+}
+
+h1 {
+    text-align: center;
+    font-size: 26px;
+    margin-bottom: 30px;
+}
+
+.contenedor {
+    max-width: 900px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+}
+
+.testimonio {
+    padding: 20px;
+    border-radius: 18px;
+}
+
+.oscuro {
+    color: white;
+    background-color: #202020;
+}
+
+.borde {
+    border: 1px solid #555;
+}
+
+.testimonio p {
+    line-height: 1.5;
+}
+
+.persona {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 18px;
+}
+
+.persona img,
+.personas img {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.persona h3 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.persona p {
+    margin: 4px 0 0;
+    font-size: 12px;
+}
+
+.foto img {
+    width: 100%;
+    height: 100%;
+    min-height: 190px;
+    border-radius: 18px;
+    object-fit: cover;
+}
+
+.grande {
+    min-height: 190px;
+}
+
+.estrellas {
+    margin: 0;
+    color: #ffc400;
+    font-size: 24px;
+}
+
+.grande h2 {
+    margin: 8px 0;
+    font-size: 22px;
+    font-weight: normal;
+}
+
+.cargo {
+    color: #bbb;
+    margin: 0;
+}
+
+.final {
+    grid-column: 1 / 3;
+    text-align: center;
+    padding: 25px;
+}
+
+.personas {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.personas img {
+    width: 42px;
+    height: 42px;
+}
+
+.personas span {
+    font-size: 24px;
+}
+
+.nombre-final {
+    margin-bottom: 0;
+}
+
+@media (max-width: 600px) {
+    .contenedor {
+        grid-template-columns: 1fr;
+    }
+
+    .final {
+        grid-column: 1;
+    }
+}
